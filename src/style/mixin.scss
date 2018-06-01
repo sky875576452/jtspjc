@@ -1,0 +1,101 @@
+$colorf1:#34495e;
+$colorf2:#7a8b95;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin pct($pct) {
+  width: #{$pct};
+  position: relative;
+  margin: 0 auto;
+}
+
+@mixin triangle($width, $height, $color, $direction) {
+  $width: $width/2;
+  $color-border-style: $height solid $color;
+  $transparent-border-style: $width solid transparent;
+  height: 0;
+  width: 0;
+  @if $direction == up {
+    border-bottom: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  } @else if $direction == right {
+    border-left: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  } @else if $direction == down {
+    border-top: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  } @else if $direction == left {
+    border-right: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+}
+$borderColor-cy:#d7dcde;
+$borderColor-zd:#b8c4ce;
+@mixin borderCs($px,$direction) {
+  @if $direction == top {
+    border-top:solid $px $borderColor-cy;
+  } @else if $direction == right {
+    border-right:solid $px $borderColor-cy;
+  } @else if $direction == bottom {
+    border-bottom:solid $px $borderColor-cy;
+  } @else if $direction == left {
+    border-left:solid $px $borderColor-cy;
+  }@else{
+    border:solid $px $borderColor-cy;
+  }
+}
+@mixin marginCs($px,$direction) {
+  @if $direction == top {
+    margin-top:$px;
+  } @else if $direction == right {
+    margin-right:$px;
+  } @else if $direction == bottom {
+    margin-bottom:$px;
+  } @else if $direction == left {
+    margin-left:$px;
+  }@else{
+    margin:$px
+  }
+}
+@mixin paddingCs($px,$direction) {
+  @if $direction == top {
+    padding-top:$px;
+  } @else if $direction == right {
+    padding-right:$px;
+  } @else if $direction == bottom {
+    padding-bottom:$px;
+  } @else if $direction == left {
+    padding-left:$px;
+  }@else {
+    padding:$px
+  }
+}

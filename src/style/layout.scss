@@ -1,0 +1,42 @@
+.title-box{
+  height:50px;line-height:50px;
+  background-color: #f3f7fd;
+  padding:0 32px;box-sizing:border-box;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  h3{
+    font-size: 18px;
+    color: #686c71;
+  }
+}
+.form-item-box{
+  line-height:32px;
+  margin-bottom:16px;
+  color: #30343a;
+  font-size:14px;
+  .label-box{
+
+  }
+  .value-box{
+    height: 32px;
+
+    padding:0 8px;
+    border-radius: 4px;
+    border: solid 1px #b8bcc2;
+
+  }
+  a.navA{
+    font-size: 12px;color:#3699ff;
+    &:hover{
+      text-decoration: underline;color:#3622ff;
+    }
+  }
+}
+.videro-details{
+  .body{
+    padding:24px 0;
+  }
+  .video-box{
+    .form-item-box{line-height: 22px;margin-bottom:10px;}
+  }
+}
+

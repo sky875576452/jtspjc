@@ -1,0 +1,187 @@
+.no-padding {
+  padding: 0px !important;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.tc {
+  text-align: center
+}
+
+.tl {
+  text-align: left
+}
+
+.tr {
+  text-align: right
+}
+
+.pd20 {
+  padding: 20px
+}
+.pb-10 {
+  padding-bottom: 10px
+}
+.pr-5 {
+  padding-right: 5px;
+}
+.textOfh1{ overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;}
+
+.mr-20 {
+  margin-right: 20px
+}
+
+.mr-5 {
+  margin-right: 5px
+}
+.mr-10 {
+  margin-right: 10px
+}
+.ml-5 {
+  margin-left: 5px
+}
+
+.ml-10 {
+  margin-left: 10px
+}
+
+.ml-15 {
+  margin-left: 15px
+}
+
+.ml-20 {
+  margin-left: 20px
+}
+.ml-50 {
+  margin-left: 50px
+}
+.mt-5 {
+  margin-top: 5px
+}
+
+.mt-10 {
+  margin-top: 10px
+}
+
+.mt-20 {
+  margin-top: 20px
+}
+.mt-30 {
+  margin-top: 30px
+}
+.mb-5 {
+  margin-bottom: 5px
+}
+
+.mb-30 {
+  margin-bottom: 30px
+}
+
+.mb-20 {
+  margin-bottom: 20px
+}
+
+.mb-10 {
+  margin-bottom: 10px
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.h100 {
+  height: 100%
+}
+
+.pt {
+  @include relative
+}
+.ps{color:red}
+.bb {
+  @include borderCs(1px, bottom)
+}
+
+.bt {
+  @include borderCs(1px, top)
+}
+
+.bl {
+  @include borderCs(1px, left)
+}
+
+.br {
+  @include borderCs(1px, right)
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.ofh {
+  overflow: hidden
+}
+.transition {
+  transition: all .2s ease;
+}
+
+.radius-box {
+  @extend.pointer,
+  .transition;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  background-color: #3da8f5;
+  font-size: 12px;
+  &:hover {
+      transform: rotate(180deg)
+  }
+}
+
+.noborder {
+  .el-input__inner,
+  .el-textarea__inner {
+      border: none;
+      @extend.tr;
+  }
+  &.tc .el-input__inner,
+  &.tc .el-textarea__inner {
+      border: none;
+      @extend.tc;
+  }
+  .el-textarea__inner {
+      resize: none
+  }
+  &.w100 {
+      width: 100%
+  }
+}
+.bg1{background-color: #f3f7fd;}b
+.br4{border-radius:4px;}
+
